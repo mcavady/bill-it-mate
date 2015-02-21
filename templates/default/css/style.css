@@ -1,0 +1,486 @@
+/*****************************************************************/ 
+/*                                                               */
+/* css for default theme                                         */
+/* Author: James Mcavady Responsive developer                    */
+/* Description: The default theme css - for the default template */
+/*                                                               */
+/*****************************************************************/
+
+/* =============================== */
+/* === Font imports from files === */
+/* =============================== */
+
+@font-face
+{
+	font-family: GlobalFont;
+	src: url(../fonts/UbuntuCondensed-Regular.ttf);
+}
+@font-face
+{
+	font-family: GlobalFontH3;
+	src: url(../fonts/RobotoCondensed-BoldItalic.ttf);
+}
+
+/* ======================= */
+/* === Resets defaults === */
+/* ======================= */
+.toDo {color: #FF0000;float: right;margin-left: 20px;}
+.doneThis {color:#00ff00;float:right;}
+.workingOnThis {color:#00E1FF;float:right;}
+.capture_image{float:left;}
+.capture_image img{float:left;height:50px;margin-left:10px;}
+img {border:none;margin:0;padding:0;}
+.success {background:#ff00ff;clear:both;float:left;font-size:1.5em;text-align:center;text-transform:uppercase;width:100%;}
+body {margin:0;/*background-image:url("../images/121904.jpg");*//*background:#506767;*/}
+hr {
+    	clear: both;
+    	float: left;
+    	width: 98%;
+    	color: #F0F0F0;
+    	margin-bottom:20px;
+}
+input:hover {background:#ddd;}
+textarea:hover {background:#ddd;}
+/* ========================== */
+/* === home page versions === */
+/* ========================== */
+
+.version {color:#ff0000;}
+.versionColour {padding:10px;font-size:1.2em;}
+.versionStatus {padding:10px;font-size:1.2em;float:right;clear:none;}
+
+/* ======================================== */
+/* === notice bubble sor user dashboard === */
+/* ======================================== */
+
+#toggle {width:25px;height:25px;background:#000;color:#fff;text-align:center;position:fixed;right:0px;bottom:433px;z-index:9000;}
+#toggle:hover {background:#ddd;}
+#toggle p {padding:0px;margin:0px;}
+#noticesBubbleUserDash {
+	width:320px;
+	position:fixed;
+	bottom:50px;
+	right:0px;
+	background:#000;	
+	text-align:left;
+	padding:5px;
+}
+.chat-messageList {width:95.6%;height:300px;float:left;margin-bottom:10px;margin-left:4px;}
+.chat-messageInput {width:95.6%;margin-left:4px;}
+.chat-button-messageSend {float:left;width:100%;margin-top:10px;height:33px;background:#8fdddd;border:0px;}
+
+/* ===================== */
+/* === cookie notice === */
+/* ===================== */
+
+#cookieInfo {
+    	background: none repeat scroll 0 0 #CAADBD;
+    	border-top: 5px solid #000000;
+    	bottom: 0px;
+    	left:0;
+    	display: inline;
+    	padding: 0;
+    	position: fixed;
+    	text-align: center;
+    	width: 100%;
+}
+#cookieButtonAccept{font-size:1.2em;background:#000;border:1px solid #000;padding:2px;color:#fff;}
+#cookieButtonAccept:hover{background:#ddd;}
+.cookie_accept_button {margin:0 auto;}
+
+
+/* =================== */
+/* === Main styles === */
+/* =================== */
+body {/*background:url("../images/bg.png");*/font-family: 'GlobalFont', sans-serif;/*min-width:1280px;*/}
+#wrapper {margin:0 auto;width:85%;}
+.login_link{color:#fff;float:right;margin-right:10px;display:inline;font-size:1.7em;background:#000;padding:5px;}
+.logout_link{color:#fff;float:right;margin-right:10px;display:none;}
+
+#content {float:left;padding:15px;width:100%;margin-top:30px;min-height: 320px;margin-bottom:50px;}
+/* =============== */
+/* === gallery === */
+/* =============== */
+.gallery {width:100%;}
+.gallery-image-holder {float:left;width:32%;text-align:center;margin:7px;background:#ddd;}
+.gallery-image{width:90%;border:1px solid #ff9000;margin:5px 5px 30px;}
+
+
+.section {background:#fff;margin:10px;float:left;width:98%;min-width:1280px;padding:10px;}
+.clear {clear: both;}
+.confComplete {
+	width:320px;
+	clear:both;
+	float:left;
+}
+
+.error {
+    	background-color: #FDF0EB;
+    	border: 1px solid #990000;
+    	color: #990000;
+    	float: left;
+    	margin: 2px 2px 2px 4px;
+    	padding: 5px;
+    	width: 100%;
+}
+.required {
+    color: #ff0000;
+    float: left;
+    margin: 5px;
+}
+#content h1 {
+	margin-top:0px;
+	float:left;
+	clear:both;
+	color:#00ff00;
+	font-size: 3.5em;
+}
+/* === base header styles === */
+h2, h3, h4, h6 {clear: both;color: #000;font-size: 1em;margin-bottom: 10px;margin-top:10px;}
+/* === header specific styles === */
+h2 {padding:10px;width:98%;border:2px solid #c1c9c9;margin-bottom:20px;}
+h3 {color: #FF0000;font-size: 1.2em;font-family: 'GlobalFontH3', sans-serif;}
+h4 {padding:10px;background:#aaaaee;color:#000;}
+h5 {float:left;clear:both;color:#494949;min-width:150px;}
+
+/* ============== */
+/* === Tables === */
+/* ============== */
+
+table {width:100%; text-align:left; border:1px solid #000; font-size:12px; color:#000;background:#fff; margin-bottom:10px;margin-top:25px;}
+table th {background-color:#E5E5E5; border:1px solid #BBBBBB; padding:3px 6px; font-weight:normal; color:#000;}
+table tr td {border:1px solid #000; padding:5px 6px;}
+table tr.alt td {background-color:#E2E2E2;}
+table tr:hover {background-color:#F0F0F0; color:#000;}
+
+/* =================================== */
+/* === tables for dashboard ========== */
+/* =================================== */
+
+.table {
+    float: left;
+    margin-top: 30px;
+    width: 99.6%;
+    text-align: center;
+}
+/* === table header === */
+.table-header-tickets {border-bottom: 5px solid #00ff00;float: left;margin: 3px;padding-top: 0px;width: 98.5%;background:#eee;}
+.table-header-projects {border-bottom: 5px solid #ff9000;float: left;margin: 3px;padding-top: 0px;width: 98.5%;background:#eee;}
+.table-header-bugs {border-bottom: 5px solid #7373ff;float: left;margin: 3px;padding-top: 0px;width: 98.5%;background:#eee;}
+.table-header-stats {border-bottom: 5px solid #ffff00;float: left;margin: 3px;padding-top: 0px;width: 98.5%;background:#eee;}
+/* === table headings === */
+.table-header-project-company {float:left;width:90px;}
+.table-header-project-id {float:left;width:90px;}
+.table-header-project-name {width:90px;float:left;}
+.table-header-project-description {width:17%;float:left;text-align:left;}
+.table-header-percentComplete {float:left;width:90px;}
+.table-header-project-percentComplete {float:left;width:90px;}
+.table-header-project-deliverables {float:left;width:90px;}
+.table-header-project-startDate {float:left;width:90px;}
+.table-header-project-completionDate {float:left;width:90px;}
+
+.table-header-itemEstimate {float:left;width:90px;}
+.table-header-itemCompletionDate {float:left;width:90px;}
+.table-header-itemEstimate {float:left;width:90px;}
+
+
+/*=== bud header class's === */
+.table-header-bug-id {float:left;width:90px;}
+.table-header-project-id {float:left;width:90px;}
+
+.table-header-bug-start-date {float:left;width:90px;}
+.table-header-bug-completion-date {float:left;width:90px;}
+.table-header-bug-title {float:left;width:130px;}
+.table-header-bug-description {float:left;width:17%;text-align:left;}
+.table-header-bug-job-worker {float:left;width:90px;}
+.table-header-bug-attachments {float:left;width:90px;}
+.table-header-bug-time-estimate {float:left;width:90px;}
+.table-header-bug-time-remaining {float:left;width:90px;}
+.table-header-bug-percent-complete {float:left;width:90px;}
+.table-header-bug-count {float:left;width:90px;}
+.table-header-bugStartDate {float:left;width:90px;}
+.table-header-bugCompletionDate {float:left;width:90px;}
+.table-header-bugTimeEstimate {float:left;width:90px;}
+
+.table-header-jobWorker {float:left;width:90px;}
+
+/* === ticker header class's === */
+.table-header-ticketId {float:left;width:90px;}
+.table-header-ticketProject {float:left;width:90px;}
+.table-header-ticketStartDate {float:left;width:90px;}
+.table-header-ticketFinishDate {float:left;width:90px;}
+.table-header-ticketTitle {float:left;width:130px;}
+.table-header-ticketDescription {float:left;width:17%;}
+.table-header-ticketWorkerId {float:left;width:90px;}
+.table-header-ticketTimeEstimate {float:left;width:90px;}
+.table-header-ticketPercentComplete {float:left;width:90px;}
+.table-header-ticketTimeRemaining{float:left;width:90px;}
+/* === table content project list === */
+.table-content-company img {height:75px;width:75px;float:left;}
+.table-content-company {float:left;width:80px;}
+
+.table-content-id {float:left;width:90px;text-align:center;}
+.table-content-project {width:90px;float:left;}
+.table-content-project-description {width:17%;float:left;}
+.table-content-percent {float:left;width:90px;}
+.table-content-startDate {float:left;width:90px;}
+.table-content-completionDate {float:left;width:90px;}
+.table-content-deliverables {float:left;width:90px;}
+
+.table-content-item {float:left;width:90px;}
+.table-content-itemCompletionDate {float:left;width:90px;}
+.table-content-itemEstimate{float:left;width:90px;}
+
+.table-content-bugCount {float:left;width:90px;color:#ed2f2f;}
+.table-content-bugStartDate {float:left;width:90px;}
+.table-content-bugCompletionDate {float:left;width:90px;}
+.table-content-bugTimeEstimate {float:left;width:90px;}
+
+/* === Table rows === */
+.table-row-tickets {width:98.5%;float:left;border-bottom:5px solid #00ff00;margin:3px;padding-bottom:7px;background:#fff;}
+.table-row-projects {width:98.5%;float:left;border-bottom:5px solid #ff9000;margin:3px;padding-bottom:7px;background:#fff;}
+.table-row-bugs {width:98.5%;float:left;border-bottom:5px solid #7373ff;margin:3px;padding-bottom:7px;background:#fff;}
+.table-row-stats {width:98.5%;float:left;border-bottom:5px solid #ffff00;margin:3px;padding-bottom:7px;background:#fff;}
+.table-row {width:98.5%;float:left;border-bottom:5px solid #aa00aa;margin:3px;padding-bottom:7px;background:#fff;}
+
+.table-row-tickets:hover {background:#ddd;}
+.table-row-projects:hover {background:#ddd;}
+.table-row-bugs:hover {background:#ddd;}
+.table-row-stats:hover {background:#ddd;}
+.table-row p {line-height:1em;font-size:1em;}
+
+/* === bug table contents === */
+.table-content-bug-id {float:left;width:90px;}
+.table-content-bug-project-id {float:left;width:90px;}
+.table-content-bug-start-date {float:left;width:90px;}
+.table-content-bug-end-date {float:left;width:90px;}
+.table-content-bug-title {float:left;width:130px;}
+.table-content-bug-description {float:left;width:17%;}
+.table-content-bug-job-worker {float: left;width:90px;}
+.table-content-bug-attachments {float:left;width:90px;}
+.table-content-bug-time-estimate {float:left;width:90px;}
+.table-content-bug-time-remaining {float:left;width:90px;}
+.table-content-bug-percent-complete {float:left;width:90px;}
+.table-content-bug-worker-id {float:left;width:90px;}
+
+
+.table-content-jobWorker {float:left;width:90px;}
+
+.table-content-meter {color:#ff0000;float:left;width:9%;border:1px solid #000;margin-top:3px;}
+
+/* === ticket table === */
+.table-content-ticketId {float:left;width:90px;}
+.table-content-ticketProject {float:left;width:90px;}
+.table-content-ticketStartDate {float:left;width:90px;}
+.table-content-ticketFinishDate {float:left;width:90px;}
+.table-content-ticketTitle {float:left;width:130px;}
+.table-content-ticketDescription {float:left;width:17%;}
+.table-content-ticketWorkerId {float:left;width:90px;}
+.table-content-ticketTimeEstimate {float:left;width:90px;}
+.table-content-ticketTimeRemaining {float:left;width:90px;}
+.table-content-ticketPercentComplete {float:left;width:90px;}
+
+.table-content-buttons-form { float:right; width:100px;padding:0;}
+.table-content-button-holder { float:right; width:66px;margin-right:10px;}
+
+.table-content-edit-button input:hover {background:#000; color:#fff;border:1px solid #000;}
+.table-content-edit-button input{
+    background: none repeat scroll 0 0 #97ff82;
+    border: 1px solid #000;
+    float: right;
+    width:100%;
+}
+.table-content-edit-button {float:right;width:100%;margin-bottom:15px;margin-top:8px;}
+
+.table-content-delete-button input:hover {background:#000; color:#fff;border:1px solid #000;}
+.table-content-delete-button input{
+    background: none repeat scroll 0 0 #ff5769;
+    border: 1px solid #000;
+    float: right;
+    width:100%;
+}
+.table-content-delete-button {float:right;width:100%;}
+/* === paragraphs, list and link defaults=== */
+p {clear:both;}
+p,li {font-size: 1.2em;line-height: 1.5em;}
+li h6{font-size:0.7em;}
+a {color: #fff;text-decoration: none;}
+ul {float:left;clear:both;}
+li {list-style:none;}
+
+.listFirstLevel {width:100%;margin-bottom:15px;margin-top:30px;border:2px solid #ff9000;float:left;}
+.listSecondLevel {margin-left:15px;border-bottom:1px dotted #ccc;float:left;width:100%;}
+.listSecondLevel:hover {background:#ddd;}
+/* ===================== */
+/* === General forms === */
+/* ===================== */
+form {
+    float: left;
+    margin-top: 20px;
+    padding: 25px;
+}
+/* === Start new project form ===*/
+.projectDetails {width:45%;border:6px solid #ff9000;float:left;}
+
+#projectDescription {height:150px;width:90%;border:1px solid #ff9000;max-width:780px;}
+.projectDetails input {width:90%;border: 1px solid #ff9000;}
+
+/* === Start new project form ===*/
+.ticketDetails {width:45%;border:6px solid #00ff00;float:left;}
+
+#ticketDescription {height:150px;width:90%;border:1px solid #00ff00;max-width:780px;}
+.ticketDetails input {width:90%;border: 1px solid #00ff00;}
+
+/* === Start new bug form === */
+.bugDetails {width:45%;border:6px solid #7373ff;float:left;}
+
+#bugDescription {height:150px;width:90%;border:1px solid #7373ff;max-width:630px;}
+.bugDetails input {width:90%;border: 1px solid #7373ff;}
+
+/* ================== */
+/* === Login form === */
+/* ================== */
+
+.login_form {
+    margin: 0 auto;
+    width: 480px;
+}
+
+.login_form h4 {
+	float: left;
+	font-size: 1em;
+	letter-spacing: 10px;
+	width: 175px;
+}
+
+.login_form input {clear:both;width:100%;margin-right:30px;}
+.login_button {float:left;width:100%;margin-left:8px;margin-top:15px;}
+.login_button input {
+    background: none repeat scroll 0 0 #8fdddd;
+    border: medium none;
+    margin: 2px;
+    padding: 5px;
+    width: 97%;
+}
+.login_button input:hover{background:#000;color:#fff;}
+
+/* ======================== */
+/* === dashboard styles === */
+/* ======================== */
+#wrapper_dashboard {margin:0 auto;width:100%;height:31px;}
+#content_dashboard {float:left;margin-top:0px;min-height: 940px;width:100%;}
+#sidebar_dashboard {position:fixed;top:0px;width:100%;background:#000;/*min-width:1280px;*/}
+#sidebar_dashboard ul {
+	padding:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+#sidebar_dashboard li {
+	list-style:none;
+	font-size:1.3em;
+	color:#111;
+	text-transform:uppercase;
+	display:inline;
+	float:left;	
+}
+
+#sidebar_dashboard a {float:left;padding-left:15px;padding-right:15px;}
+#sidebar_dashboard li:hover {background:#aaa;}
+#sidebar_dashboard li:active {background:#494949;}
+#sidebar_dashboard li:hover {border-bottom:3px solid #000;}
+
+/* ===================================== */
+/* === dashboard nav styles per link === */
+/* ===================================== */
+
+.NavUser {border-bottom:8px solid #fe69ba;}
+.pro-list {border-bottom:8px solid #ff9000;}
+.pro-stats {border-bottom:8px solid #ffff00;}
+.pro-new {border-bottom:8px solid #ff9000;}
+.pro-tic-list {border-bottom:8px solid #00ff00;}
+.pro-tic-new {border-bottom:8px solid #00ff00;}
+.pro-bug-list {border-bottom:8px solid #7373ff;}
+.pro-bug-new {border-bottom:8px solid #7373ff;}
+.invoices {border-bottom:8px solid #a167bd;}
+.settings {border-bottom:8px solid #c648f5;}
+.logout {border-bottom:8px solid #747749;}
+
+/* ====================== */
+/* === main dashboard === */
+/* ====================== */
+#main_dashboard_output {
+	float: left;
+    	margin-bottom: 50px;
+	margin-top:50px;
+    	padding-left: 20px;
+    	width: 98%;
+}
+#main_dashboard_output .bar{height:48px;}
+
+/* ============================================ */
+/* === job_percent_complete_list_single_job === */
+/* ============================================ */
+.job_percent_complete_list_single_job img {height:75px; width:75px;}
+.job_percent_complete_list_single_job h3 {color:#000;margin-top:32px;}
+.job_percent_complete_list {float:left; width:165px;min-height:350px;margin-bottom:10px;margin-right:20px;margin-top:10px;}
+.job_percent_complete_list p {margin:0;}
+.job_percent_complete_list_single_job {float:left;margin-bottom:5px;padding-left:15px;width:150px; border:2px solid #ddd;}
+.job_percent_complete {float:right;margin:18px;color:#999;font-size:1.4em;}
+
+/* ================== */
+/* === Quick info === */
+/* ================== */
+.quick_info {
+	float:left;
+	width:320px;
+	border: 1px dotted #000;
+	margin:10px;
+	padding:10px;
+	background:#fff;
+}
+
+/* ============== */
+/* === Footer === */
+/* ============== */
+#footer {
+	clear: both;
+	background: none repeat scroll 0 0 #000;
+	text-align: right;
+	width: 100%;
+	border-top:2px solid #999999;
+	max-height:55px;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+}
+.footer-copy-logo {float:right;margin-right:5px;margin-left:5px;}
+.footer_links {float:left;padding:10px;}
+.about {float:left;color:#555;margin-left:10px;}
+.privacy {float:left;color:#a2a2a2;margin-left:10px;}
+.copy {float:right;color:#a2a2a2;}
+.copy p {clear:none;float:left;line-height:0.8em;}
+
+/* ================================================================= */
+/* === media query for all of site for screens above 960px width === */
+/* ================================================================= */
+
+@media screen and (min-width: 960px){
+
+	#content {
+		padding:0px;
+	}
+	ul {
+		padding:0px;
+		width:100%;
+	}
+	.listFirstLevel {
+		font-size:1em;
+	}
+}
+
+
+
+
+
+
+

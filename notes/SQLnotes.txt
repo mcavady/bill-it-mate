@@ -1,0 +1,18 @@
+/*** Notes for sql commands that might be used ***/
+
+/* Insert a new job */
+
+INSERT INTO `billitmate`.`jobs` (`job_id`, `job_name`, `job_item`, `job_startdate`, `job_completiondate`, `job_itemestimate`, `job_itemcompletiondate`, `job_bugs`, `job_bugstartdate`, `job_bugcompleteddate`, `job_bugtimeestimate`, `job_project`, `job_worker`, `job_percent_complete`) VALUES ('20', 'testing a job', 'no items', '2014-06-05', '2014-06-06', '7', '2014-06-04', '1', '2014-06-06', '2014-06-06', '7','bill it mate','64','80');
+
+/* Update a job percent */
+
+UPDATE `jobs` SET `job_percent_complete` = '100' WHERE `jobs`.`job_id` =5;
+
+
+/* Add to the end of a table */
+
+ALTER TABLE `jobs` ADD `job_percent_complete` VARCHAR( 255 ) NOT NULL ;
+
+/* Update work for job */
+
+UPDATE `jobs` SET `job_worker` = '63' WHERE `jobs`.`job_id` =3;

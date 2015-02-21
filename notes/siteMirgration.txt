@@ -1,0 +1,4 @@
+cp -R secrueimage to dir ../ (1 below)
+
+change the url in the index file
+
