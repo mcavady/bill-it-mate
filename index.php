@@ -15,15 +15,6 @@ define('DB_USER','root');
 define('DB_PASS','FFSbork909');
 define('PREFIX','');
 
-
-
-
-
-
-//blar
-
-
-
 //set prefix for sessions
 define('SESSION_PREFIX','bim_');
 
