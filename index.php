@@ -3,7 +3,7 @@ ob_start();
 //set timezone
 date_default_timezone_set('Europe/London');
 //site address - chnage it to your site domain
-define('DIR','http://preview.responsivedeveloper.com/bill-it-mate/');
+define('DIR','http://yoururl.com/bill-it-mate/');
 define('DOCROOT', dirname(__FILE__));
 
 //database details ONLY NEEDED IF USING A DATABASE
