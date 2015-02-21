@@ -8,12 +8,21 @@ define('DIR','YOUR.URL.com/billitmate');
 define('DOCROOT', dirname(__FILE__));
 
 //database details ONLY NEEDED IF USING A DATABASE
-define('DB_TYPE','TYPE');//Your database type
-define('DB_HOST','HOST');//Your database host
-define('DB_NAME','BILLITMATE'); //your database name
-define('DB_USER','USERNAME'); //your database username
-define('DB_PASS','PASSWORD');//your database username password
-define('PREFIX','');//your database prefix
+define('DB_TYPE','mysql');
+define('DB_HOST','localhost');
+define('DB_NAME','billitmate');
+define('DB_USER','root');
+define('DB_PASS','FFSbork909');
+define('PREFIX','');
+
+
+
+
+
+
+//blar
+
+
 
 //set prefix for sessions
 define('SESSION_PREFIX','bim_');
