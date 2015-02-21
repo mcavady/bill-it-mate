@@ -14,6 +14,12 @@ define('DB_USER','USERNAME'); //your database username
 define('DB_PASS','PASSWORD');//your database username password
 define('PREFIX','');//your database prefix
 
+
+
+
+
+//blar
+
 //set prefix for sessions
 define('SESSION_PREFIX','bim_');
 //optionall create a constant for the name of the site
