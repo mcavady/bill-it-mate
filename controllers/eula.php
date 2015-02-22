@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - EULA Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class Eula extends Controller{
 

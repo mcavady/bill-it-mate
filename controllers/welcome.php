@@ -1,4 +1,8 @@
 <?php
+        // === For website - welcome page Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class Welcome extends Controller{
 

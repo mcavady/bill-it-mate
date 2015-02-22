@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - User Dashboard Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class UserDashboard extends Controller{
 
@@ -26,7 +30,7 @@ class UserDashboard extends Controller{
 		$ticketStatsDashboard = $this->_model->get_ticketstats();
 		$data['allTicketStatsDashboard'] = $ticketStatsDashboard;
 
-		// === Get all the ticket stats === //
+		// === Get all the bug stats === //
 		$bugStatsDashboard = $this->_model->get_bugstats();
 		$data['allBugStatsDashboard'] = $bugStatsDashboard;
 

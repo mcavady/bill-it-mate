@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Is Logged in Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class Loggedin extends Controller{
 

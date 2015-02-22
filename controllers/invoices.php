@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Invoices Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class Invoices extends Controller{
 

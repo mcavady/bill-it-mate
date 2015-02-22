@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Forgot Password Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class ForgotPassword extends Controller{
 

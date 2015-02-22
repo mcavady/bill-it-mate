@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Edit Ticket Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class EditTicket extends Controller{
 

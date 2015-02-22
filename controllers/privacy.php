@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Privacy Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class Privacy extends Controller{
 

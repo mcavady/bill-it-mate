@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Log In Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class Login extends Controller{
 

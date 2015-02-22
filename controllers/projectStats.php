@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Project Stats Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class ProjectStats extends Controller {
 
@@ -7,7 +11,7 @@ class ProjectStats extends Controller {
 	}
 
 	public function index(){
-// === Make the array of jobs from the model and create and array for the view to loop through === //
+// === Make the array of project stats from the model and create and array for the view to loop through === //
  		$projectStats = $this->_model->get_projectstats();
 		$data['allProjectStats'] = $projectStats;
 

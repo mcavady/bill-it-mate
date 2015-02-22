@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Register Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class Register extends Controller{
 

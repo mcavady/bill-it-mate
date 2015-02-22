@@ -1,4 +1,8 @@
 <?php
+        // === For admin/dashboard - Edit Project Controller === //
+        // === @author James - Responsive Developer === //
+?>
+<?php
 
 class EditProject extends Controller{
 
