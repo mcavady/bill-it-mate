@@ -4,7 +4,7 @@
     <div class="privacy">
 	<?php echo '<a href=' .DIR. 'privacy>Privacy </a> | '; ?>
 	<?php echo '<a href=' .DIR. 'eula>End User Licence Agreement </a> | '; ?>
-	<a href="http://preview.responsivedeveloper.com/billitmate/">About</a>
+	<a href="http://preview.responsivedeveloper.com/bill-it-mate/">About</a>
     </div>
   </div>
 	<div class="copy">
