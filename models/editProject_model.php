@@ -1,4 +1,9 @@
 <?php
+        // === For admin/dashboard - Edit Project Model === //
+        // === @author James - Responsive Developer === //
+?>
+
+<?php
 
 class EditProject_model extends model {
 
@@ -7,9 +12,7 @@ class EditProject_model extends model {
 	}
 
 	public function get_project($projectId) {
-// === get the project id from the cookie and use it in the where clause === //
 		$projectId = Session::get('projectId');
-
 		return $this->_db->select("SELECT project_id, project_name, project_startdate, project_completion_date, project_worker, project_description, project_time_estimate, project_percent_complete FROM " . PREFIX . "jobs WHERE project_id='" . $projectId . "'" );
 	}
 

@@ -1,4 +1,9 @@
 <?php
+        // === For admin/dashboard - Login Model === //
+        // === @author James - Responsive Developer === //
+?>
+
+<?php
 
 class Login_model extends model {
 

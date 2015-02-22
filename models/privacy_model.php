@@ -1,4 +1,9 @@
 <?php
+        // === For admin/dashboard - Privacy Model === //
+        // === @author James - Responsive Developer === //
+?>
+
+<?php
 
 class Privacy_model extends model {
 

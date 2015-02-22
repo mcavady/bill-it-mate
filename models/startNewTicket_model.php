@@ -1,4 +1,9 @@
 <?php
+        // === For admin/dashboard - Start New Ticket Model === //
+        // === @author James - Responsive Developer === //
+?>
+
+<?php
 
 class StartNewTicket_model extends model {
 

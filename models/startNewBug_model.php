@@ -1,4 +1,9 @@
 <?php
+        // === For admin/dashboard - Start New Bug Model === //
+        // === @author James - Responsive Developer === //
+?>
+
+<?php
 
 class StartNewBug_model extends model {
 

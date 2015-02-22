@@ -1,10 +1,16 @@
 <?php
+        // === For admin/dashboard - Register Model === //
+        // === @author James - Responsive Developer === //
+?>
+
+<?php
 
 class register_model extends model {
 
 	public function __construct(){
 		parent::__construct();
 	}
+//to do //
 //make sure this is returning the values it should to the controler
 	public function get_userID($id,$activation){
 		return $this->_db->select("SELECT id,active FROM " . PREFIX . "users WHERE id = :id AND active = :active",array(':id' => $id,':active' => $activation));

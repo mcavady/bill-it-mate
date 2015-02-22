@@ -1,4 +1,9 @@
 <?php
+        // === For admin/dashboard - Forgot Password Model === //
+        // === @author James - Responsive Developer === //
+?>
+
+<?php
 
 class ForgotPassword_model extends model {
 
@@ -6,7 +11,7 @@ class ForgotPassword_model extends model {
 		parent::__construct();
 	}
 
-// === get the username === //
+	// === get the username === //
         public function get_username($username) {
                 return $this->_db->select("SELECT id,username FROM " . PREFIX . "users WHERE username = :username", array(':username' => $username));
         }
