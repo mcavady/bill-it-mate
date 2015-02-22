@@ -1,3 +1,8 @@
+<?php
+        // === For admin/dashboard - Ticket List === //
+        // === @author James - Responsive Developer === //
+?>
+
 <div id="wrapper_dashboard">
   <div id="content_dashboard">
       <div id="sidebar_dashboard">
@@ -20,10 +25,10 @@
 	<?php
 		if(isset($data['allTickets'])) {
 			foreach($data['allTickets'] as $row) {
-				// if they are logged in get the id from the cookie and display the jobs they are assigned
+				// if they are logged in get the id from the cookie and display the tickets they are assigned
 	                        if(Session::get('loggedin') == true) { //only do this if they are loggen in if not redirect to login
 		                        $worker = Session::get('id');
-					// === match the worker ID from the session with the allJobs array and display jobs for the user that is logged in === //
+					// === match the worker ID from the session with the tickets array and display tickets for the user that is logged in === //
 					if($row->ticket_worker_id == $worker){
 					echo "<div class='table-row-tickets'>";
 						echo "<div class='table-content-ticketId'><p>" . $row->ticket_id . "</p></div> ";

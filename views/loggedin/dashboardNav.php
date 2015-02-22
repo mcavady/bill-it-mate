@@ -1,3 +1,8 @@
+<?php
+        // === For admin/dashboard - Navigation === //
+        // === @author James - Responsive Developer === //
+?>
+
 <ul>
           <li class="NavUser">
 		<a href="<?php echo DIR;?>userDashboard" title="Dashboard">

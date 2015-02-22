@@ -1,3 +1,8 @@
+<?php
+        // === For admin/dashboard - Invoices === //
+        // === @author James - Responsive Developer === //
+?>
+
 <div id="wrapper_dashboard">
   <div id="content_dashboard">
       <div id="sidebar_dashboard">

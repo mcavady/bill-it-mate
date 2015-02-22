@@ -1,3 +1,8 @@
+<?php
+        // === For admin/dashboard - Project Stats === //
+        // === @author James - Responsive Developer === //
+?>
+
 <div id="wrapper_dashboard">
   <div id="content_dashboard">
       <div id="sidebar_dashboard">
@@ -17,10 +22,10 @@
 	<?php
 	if(isset($data['allProjectStats'])) {
 		foreach($data['allProjectStats'] as $row) {
-			// if they are logged in get the id from the cookie and display the jobs they are assigned
+			// if they are logged in get the id from the cookie and display the project stats they are assigned
                         if(Session::get('loggedin') == true) { //only do this if they are loggen in if not redirect to login
 	                        $worker = Session::get('id');
-				// === match the worker ID from the session with the allJobs array and display jobs for the user that is logged in === //
+				// === match the worker ID from the session with the allJobs array and display project stats for the user that is logged in === //
 				if($row->project_worker == $worker){
 				echo "<div class='table-row-stats'>";
 					echo "<div class='table-content-company'><p>" . $row->project_company . "</p></div> ";

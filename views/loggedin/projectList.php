@@ -1,3 +1,8 @@
+<?php
+        // === For admin/dashboard - Project List === //
+        // === @author James - Responsive Developer === //
+?>
+
 <div id="wrapper_dashboard">
   <div id="content_dashboard">
       <div id="sidebar_dashboard">
@@ -23,10 +28,10 @@
 	<?php
 		if(isset($data['allProjects'])) {
 			foreach($data['allProjects'] as $row) {
-				// if they are logged in get the id from the cookie and display the jobs they are assigned
+				// if they are logged in get the id from the cookie and display the projects they are assigned
 	                        if(Session::get('loggedin') == true) { //only do this if they are loggen in if not redirect to login
 		                        $worker = Session::get('id');
-					// === match the worker ID from the session with the allJobs array and display jobs for the user that is logged in === //
+					// === match the worker ID from the session with the projects array and display projects for the user that is logged in === //
 					if($row->project_worker == $worker){
 					echo "<div class='table-row-projects'>";
 						echo "<div class='table-content-company' ><p>" . $row->project_company . "</p></div> ";
@@ -41,12 +46,12 @@
 						echo "<div class='table-content-bugCount'><p>" . $row->project_bugs . "</p></div> ";
 						echo "<div class='table-content-bugCount'><p>" . $row->project_bugtimeestimate . "</p></div> ";
 
-			//echo "<div class='table-content-button-holder'>";
-			echo "<div class='table-content-button-holder'><form method='post' class='table-content-buttons-form'>";
-		echo "<div class='table-content-button-holder'><form method='post' class='table-content-buttons-form'>";
-                echo "<div class='table-content-edit-button'>Edit Project<input type='submit' name='edit' value=" . $row->project_id . "></div> ";
-                echo "<div class='table-content-delete-button'>Delete Project<input type='submit' name='delete' value=". $row->project_id . " ></div> ";
-                echo "</form></div>";
+						//echo "<div class='table-content-button-holder'>";
+						echo "<div class='table-content-button-holder'><form method='post' class='table-content-buttons-form'>";
+						echo "<div class='table-content-button-holder'><form method='post' class='table-content-buttons-form'>";
+                				echo "<div class='table-content-edit-button'>Edit Project<input type='submit' name='edit' value=" . $row->project_id . "></div> ";
+                				echo "<div class='table-content-delete-button'>Delete Project<input type='submit' name='delete' value=". $row->project_id . " ></div> ";
+                				echo "</form></div>";
 
 
 

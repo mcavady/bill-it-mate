@@ -21,10 +21,10 @@
 	<?php
 		if(isset($data['allBugs'])) {
 			foreach($data['allBugs'] as $row) {
-				// if they are logged in get the id from the cookie and display the jobs they are assigned
+				// if they are logged in get the id from the cookie and display the bugss they are assigned
 	                        if(Session::get('loggedin') == true) { //only do this if they are loggen in if not redirect to login
 		                        $worker = Session::get('id');
-					// === match the worker ID from the session with the allJobs array and display jobs for the user that is logged in === //
+					// === match the worker ID from the session with the bugs array and display bugs for the user that is logged in === //
 					if($row->bug_worker_id == $worker){
 					echo "<div class='table-row-bugs'>";
 						echo "<div class='table-content-bug-id'><p>" . $row->bug_id . "</p></div> ";

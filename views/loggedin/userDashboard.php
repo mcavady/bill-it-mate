@@ -1,3 +1,8 @@
+<?php
+        // === For admin/dashboard - User Dashboard === //
+        // === @author James - Responsive Developer === //
+?>
+
 <div id="wrapper_dashboard">
 
   <div id="content_dashboard">
@@ -12,31 +17,10 @@
  	<?php
 	if(isset($data['allJobStatsDashboard'])) {
                 foreach($data['allJobStatsDashboard'] as $row) {
-                        // if they are logged in get the id from the cookie and display the jobs they are assigned
+                        // if they are logged in get the id from the cookie and display the user dashboard they are assigned
                         if(Session::get('loggedin') == true) { //only do this if they are loggedin in if not redirect to login
                                 $worker = Session::get('id');
-                                // === match the worker ID from the session with the allJobs array and display jobs for the user that is logged in === //
-//                                if($row->project_worker == $worker){
-//     					echo "<p>" .$row->project_name . "</p>";
-//
-//					if($row->project_percent_complete <= 25) {
-//						$color = "#ff00ff";
-//					}
-//					if($row->project_percent_complete >= 26 ) {
-//						$color = "#00ffff";
-//					}
-//					if($row->project_percent_complete >= 50 ) {
-//						$color = "#ccffff";
-//					}
-//					if($row->project_percent_complete >= 75 ) {
-//						$color = "#00ff00";
-//					}
-//					if($row->project_percent_complete == 0 ) {
-//						$color = "transparent";
-//					}
-//					echo "<div class='meter'><div class='bar' style='width:" . $row->project_percent_complete . "%; background:$color' > <p>". $row->project_percent_complete . "%</p></div>";
-//					echo "</div>";
-//				}
+				//stuff to go here
                         } else {
                                 Url::redirect('login');
                         }
