@@ -8,7 +8,7 @@
   <h1>Bill It Mate</h1> <div class="version"> Mercury (alpha 0.2)</div>
 
 <div class="section">
-    <h2>!!! Has moved !!!</h2>
+    <h2>!!! Has moved - To this URL - so book mark its new place!!!</h2>
 	<p>Started in May 7th 2014!</p>
     	<p>This is not an egg whisk that is for sure !</p>
     	<p>The aim is to build 'the one stop shop' for project managment and invoicing, bug reporting and ticket system. This is a side project of mine to help me work and manage projects. That I hope one day to release to the web. Stating with task managment and building up to a full project managment system.</p>

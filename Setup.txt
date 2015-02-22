@@ -1,9 +1,9 @@
 Please attribute Me James Mcavady (Responsive Developer) - www.responsivedeveloper.com
 And the SimpleMVC by Dave Carr (https://github.com/daveismyname) in all works. Thanks and happy codings!
 
-1 - Create data base;
+1 - Create data base; - Template and install script is yet to be written.
 2 - edit index-sample.php to your servers configuration and save as index.php
-3 - get secure image and configure, placing the "secureImage" folder one level up from the "billitmate" folder.
+3 - get secure image and configure, placing the "secureImage" folder one level up from the "bill-it-mate" folder.
 4 - check it is working
 
 5 - If not make a brew and figure out what went wrong, then report the bug please ;)

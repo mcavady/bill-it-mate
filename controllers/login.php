@@ -9,7 +9,7 @@ class Login extends Controller{
 	public function index(){
 
 // === get the captch files ready for use === //
-		include_once $_SERVER['DOCUMENT_ROOT'] . '/billitmate/securimage/securimage.php';
+		include_once  '../securimage/securimage.php';
 		$securimage = new Securimage();
 
 //log the user in and redirect to dashboard it loggin cookie and hash match
