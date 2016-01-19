@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 
 # Use single quotes instead of double quotes to make it work with special-character passwords
-PASSWORD='smarte'
-
-sudo apt-get install linux-headers-generic build-essential dkms
+PASSWORD='12345678'
+PROJECTFOLDER='myproject'
 
 # create project folder
-sudo mkdir -p "/var/www/html"
+sudo mkdir "/var/www/html/${PROJECTFOLDER}"
 
 # update / upgrade
 sudo apt-get update
@@ -14,18 +13,8 @@ sudo apt-get -y upgrade
 
 # install apache 2.5 and php 5.5
 sudo apt-get install -y apache2
-sudo apt-get install libapache2-mod-php5
-sudo apt-get install -y php5 php5-curl php5-gd php5-mcrypt php5-xdebug php-soap php-pear php5-cli php5-common php5-dev php5-memcache memcached
-sudo apt-get install -y libsqlite3-dev ruby1.9.3
-sudo gem install mailcatcher
-sudo mailcatcher --http-ip=0.0.0.0
+sudo apt-get install -y php5
 
-#install APC
-sudo apt-get install -y php-apc
-
-#install Intl
-#sudo apt-get install php5-intl
-#
 # install mysql and give password to installer
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD"
@@ -43,10 +32,9 @@ sudo apt-get -y install phpmyadmin
 
 # setup hosts file
 VHOST=$(cat <<EOF
-ServerName localhost
 <VirtualHost *:80>
-    DocumentRoot "/var/www/html"
-    <Directory "/var/www/html">
+    DocumentRoot "/var/www/html/${PROJECTFOLDER}"
+    <Directory "/var/www/html/${PROJECTFOLDER}">
         AllowOverride All
         Require all granted
     </Directory>
@@ -64,12 +52,6 @@ service apache2 restart
 # install git
 sudo apt-get -y install git
 
-#install htop
-sudo apt-get install htop
-
 # install Composer
 curl -s https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
-
-# add GB locale
-sudo locale-gen en_GB.UTF-8
